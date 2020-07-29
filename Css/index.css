@@ -1,0 +1,91 @@
+body{
+    background: url(../Img/Fondo.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.main-section{
+    margin:0 auto;
+    margin-top:25%;
+    padding: 0;
+}
+
+.modal-content{
+    background-color: #3b4652;
+    opacity: .85;
+    padding: 0 20px;
+    box-shadow: 0px 0px 3px #848484;
+}
+.user-img{
+    margin-top: -50px;
+    margin-bottom: 35px;
+}
+
+.user-img img{
+    width: 100xp;
+    height: 100px;
+    box-shadow: 0px 0px 3px #848484;
+    border-radius: 50%;
+}
+
+.form-group input{
+    height: 42px;
+    font-size: 18px;
+    border:0;
+    padding-left: 54px;
+    border-radius: 5px;
+}
+
+.form-group::before{
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute;
+    left: 28px;
+    font-size: 22px;
+    padding-top:4px;
+}
+
+/*Iconos*/
+.form-group#user-group::before{
+    content: "\f007";
+}
+
+.form-group#contrasena-group::before{
+    content: "\f023";
+}
+.form-group#email-group::before{
+    content: "\f199";
+}
+/*Iconos*/
+button{
+    width: 60%;
+    margin: 5px 0 25px;
+}
+
+.forgot{
+    padding: 5px 0;
+}
+
+.forgot a{
+    color: white;
+}
+
+#msg {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: rgb(25, 0, 255);
+    color: #000000;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    right: 37%;
+    top: 30px;
+    font-size: 17px;
+    margin-right: 30px;
+}
+
+#msg.show {
+    visibility: visible;
+    -webkit-animation: fadein 1.5s, fadeout 0.5s 2.5s;
+    animation: fadein 1.5s, fadeout 0.5s 2.5s;
+}
